@@ -23,7 +23,7 @@ cmd({
       react: { text: "⏳", key: m.key }
     });
 
-    const response = await axios.get(`https://insta-down.apis-bj-devs.workers.dev/?url=https://instagram.com/reel`);
+    const response = await axios.get("https://insta-down.apis-bj-devs.workers.dev/?url=https://instagram.com/reel");
     const data = response.data;
 
     if (!data || data.status !== 200 || !data.downloadUrl) {
