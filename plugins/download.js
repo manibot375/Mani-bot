@@ -1,6 +1,6 @@
 const { fetchJson } = require("../lib/functions");
 const { downloadTiktok } = require("@mrnima/tiktok-downloader");
-const { facebook } = require("@mrnima/facebook-downloader");
+const { facebook } = require("https://fb-down.apis-bj-devs.workers.dev/?url=https://facebook.com/video");
 const cheerio = require("cheerio");
 const { igdl } = require("ruhend-scraper");
 const axios = require("axios");
@@ -23,7 +23,7 @@ cmd({
       react: { text: "⏳", key: m.key }
     });
 
-    const response = await axios.get(`https://api.davidcyriltech.my.id/instagram?url=${q}`);
+    const response = await axios.get(`https://insta-down.apis-bj-devs.workers.dev/?url=https://instagram.com/reel`);
     const data = response.data;
 
     if (!data || data.status !== 200 || !data.downloadUrl) {
